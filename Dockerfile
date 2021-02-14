@@ -1,4 +1,4 @@
-FROM apline:latest AS builder
+FROM apline:3.13.1 AS builder
 
 ENV BDS='/bedrock_server'
 
