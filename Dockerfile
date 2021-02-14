@@ -7,7 +7,7 @@ RUN mkdir -p $BDS
 ENV TZ=UTC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN RUN export DEBIAN_FRONTEND="noninteractive" \ 
+RUN export DEBIAN_FRONTEND="noninteractive" \ 
     apt update && \
     apt install -y --no-install-recommends \
     apt-transport-https \
