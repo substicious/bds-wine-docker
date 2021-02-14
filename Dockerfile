@@ -11,7 +11,7 @@ RUN export DEBIAN_FRONTEND="noninteractive" \
     apt update && \
     apt install -y --no-install-recommends \
     apt-transport-https \
-    gnupg2 \
+    gpgv \
     software-properties-common \
     unzip \
     wget && \
