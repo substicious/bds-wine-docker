@@ -4,8 +4,8 @@ ENV BDS='/bedrock_server'
 
 RUN mkdir -p $BDS
 
-RUN apk update && \
-    apk add unzip wget
+RUN apt update && \
+    apt install unzip wget
 
 RUN wget https://minecraft.azureedge.net/bin-win/bedrock-server-1.16.201.03.zip && \
     cp bedrock-server-1.16.201.03.zip $BDS && \
