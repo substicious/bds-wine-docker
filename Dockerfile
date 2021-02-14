@@ -40,7 +40,7 @@ RUN wget https://dl.winehq.org/wine/wine-mono/${MONO}/wine-mono-${MONO}-x86.msi 
     rm -f wine-mono-${MONO}-x86.msi wine-gecko-${GECKO}-x86.msi wine-gecko-${GECKO}-x86_64.msi
     
 RUN wget https://minecraft.azureedge.net/bin-win/bedrock-server-1.16.201.03.zip && \
-    unzip -d $BDS $BDS/bedrock-server-1.16.201.03.zip && \
+    unzip -d $BDS bedrock-server-1.16.201.03.zip && \
     rm -rf bedrock-server-1.16.201.03.zip
 
 RUN apt install -y -f winetricks && \
