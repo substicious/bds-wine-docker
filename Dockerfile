@@ -11,10 +11,7 @@ RUN export DEBIAN_FRONTEND="noninteractive" \
     apt update && \
     apt install -y --no-install-recommends \
     apt-transport-https \
-    gpgv \
-    software-properties-common \
-    unzip \
-    wget && \
+    gpgv && \
     rm -rf /var/lib/apt/lists/*
 
 ARG BRANCH="stable"
