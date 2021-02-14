@@ -11,6 +11,8 @@ RUN export DEBIAN_FRONTEND="noninteractive" \
     apt update && \
     apt install -y --no-install-recommends \
     apt-transport-https \
+    unzip \
+    wget \ 
     gpgv && \
     rm -rf /var/lib/apt/lists/*
 
