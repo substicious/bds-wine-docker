@@ -1,4 +1,4 @@
-FROM apline:3.13.1
+FROM ubuntu:latest
 
 ENV BDS='/bedrock_server'
 
